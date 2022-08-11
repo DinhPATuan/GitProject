@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập tính lãi suất
+    </title>
+</head>
+<body>
+    <script>
+        let inputmoney;
+        let inputyear;
+        inputmoney = prompt ("Số tiền gửi:");
+        inputyear = prompt ("Số năm gửi:");
+        let money = parseInt(inputmoney)
+        let year = parseInt(inputyear)
+        let total = money * 6.9/100 *year + money
+        document.write ("Tổng tiền: " +total)   
+    </script>  
+</body>
+</html>
