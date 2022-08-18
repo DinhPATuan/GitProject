@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập ứng dụng máy tính</title>
+</head>
+<body>
+    <h4>Calculator</h4>
+    <input type="number" id="inputNumber1">
+    <input type="number" id="inputNumber2"><br><br>
+    <button type="button" onclick="add()">Addition(+)</button>
+    <button type="button" onclick="sub()">Subtraction(-)</button>
+    <button type="button" onclick="multi()">Multiplication(x)</button>
+    <button type="button" onclick="divi()">Division(/)</button>
+    <div id="result"></div>
+</body>
+<script>
+    function add(){
+        let a = document.getElementById("inputNumber1").value
+        let x = parseFloat(a)
+        let b = document.getElementById("inputNumber2").value
+        let y = parseFloat(b)
+        let result = x + y
+        document.getElementById("result").innerHTML = "<br>" + "Result Addition: " + result
+        }
+        function sub(){
+        let a = document.getElementById("inputNumber1").value
+        let x = parseFloat(a)
+        let b = document.getElementById("inputNumber2").value
+        let y = parseFloat(b)
+        let result = x - y
+        document.getElementById("result").innerHTML = "<br>" + "Result Addition: " + result
+        }
+        function multi(){
+        let a = document.getElementById("inputNumber1").value
+        let x = parseFloat(a)
+        let b = document.getElementById("inputNumber2").value
+        let y = parseFloat(b)
+        let result = x * y
+        document.getElementById("result").innerHTML = "<br>" + "Result Addition: " + result
+        }
+        function divi(){
+        let a = document.getElementById("inputNumber1").value
+        let x = parseFloat(a)
+        let b = document.getElementById("inputNumber2").value
+        let y = parseFloat(b)
+        let result = x / y
+        document.getElementById("result").innerHTML = "<br>" + "Result Addition: " + result
+        }
+</script>
+</html>
