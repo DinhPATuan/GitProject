@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập kiểm tra số chẵn</title>
+</head>
+<body>
+    <p>Nhập số</p>
+    <input type="number" id="inputNumber">
+    <button type="button" onclick="showMassage()">Kiểm tra</button>
+</body>
+<script>
+    function showMassage (){
+        let x = document.getElementById("inputNumber").value
+        let y = parseInt(x) 
+        if (y%2 == 0){
+           alert (x + " là số chẵn")
+        }
+        else {
+        alert ( x + " là số lẻ")
+        }
+    }
+</script>
+</html>
