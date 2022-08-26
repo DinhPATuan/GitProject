@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <h1>Tính điểm DH khối D</h1>
+        </tr>
+        <tr>
+            <td>
+                Môn Toán 
+            </td>
+            <td>
+                <input type="text" id="number1">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Môn Văn 
+            </td>
+            <td>
+                <input type="text" id="number2">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Môn Anh 
+            </td>
+            <td>
+                <input type="text" id="number3">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Khu vực 
+            </td>
+            <td>
+                <select id="area">
+                    <option value= 1 >KV1</option>
+                    <option value= 2 >KV2</option>
+                    <option value= 3 >KV2-NT</option>
+                    <option value= 4 >KV3</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="total()"> Tính điểm</button>
+            </td>
+        </tr>
+    </table>
+    <p id="result"></p>
+</body>
+<script>
+    function total(){
+        let mat = parseFloat(document.getElementById("number1").value)
+        let lit = parseFloat(document.getElementById("number2").value)
+        let eng = parseFloat(document.getElementById("number3").value)
+        let area = document.getElementById("area").value
+        switch (area){
+            case "1":
+                document.getElementById("result").innerHTML = "Tổng điểm ĐH khối D của bạn là " + (mat + lit + eng + 0.75)
+                break
+            case "2":
+                document.getElementById("result").innerHTML = "Tổng điểm ĐH khối D của bạn là " + (mat + lit + eng + 0.5)
+                break
+            case "3":
+                document.getElementById("result").innerHTML = "Tổng điểm ĐH khối D của bạn là " + (mat + lit + eng + 0.25)
+                break
+            case "4":
+                document.getElementById("result").innerHTML = "Tổng điểm ĐH khối D của bạn là " + (mat + lit + eng)
+                break
+        }
+    }
+</script>
+</html>

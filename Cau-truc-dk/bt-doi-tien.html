@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Amount</th>
+            <th>From</th>
+            <th>To</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td><input type="text" name="" id="amount"></td>
+            <td><select name="" id="from">
+                    <option value="1">USD</option>
+                    <option value="23000">VND</option>
+                    <option value="3000">NDT</option></select></td>
+            <td><select name="" id="to">
+                     <option value="1">USD</option>
+                    <option value="23000">VND</option>
+                    <option value="3000">NDT</option></select></td>
+            <td><button onclick="Con()">Convert</button></td>
+        </tr>
+        <h1 id="result"></h1>
+    </table>
+</body>
+<script>
+    function Con() {
+        let amount = document.getElementById("amount").value
+        let from = document.getElementById("from").value
+        let to  = document.getElementById("to").value
+        let money = amount * to / from
+        document.getElementById("result").innerHTML= money
+    }
+</script>
+</html>
