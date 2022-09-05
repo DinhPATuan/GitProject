@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let table = "<table border='1' width='800' cellspacing='1' cellpadding='3'>"
+        for (i = 2; i <= 9; i++) {
+            table += "<tr>";
+            for (j = 1; j <= 9; j++) {
+                table += "<td>" + i + "x" + j + "=" + i* j + "</td>";               
+            }
+            table += "</tr>";
+        }
+        table += "</table>";
+        document.write(table);
+        console.log(table);
+    </script>
+</body>
+</html>

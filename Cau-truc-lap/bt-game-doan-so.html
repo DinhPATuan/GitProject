@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="max()">Quất!</button>
+</body>
+<script>
+    function max(){
+        let numMax = +prompt("Nhập vào số lớn nhất!")
+        let numRan = Math.floor(Math.random() * numMax)
+        let numGue = "qwerty"
+        for (let i = 1; i<5; ++i){
+            if(i<=3){
+                if (numGue != numRan){
+                numGue = +prompt("Nhập vào dự đoán!")               
+                }
+                else{                   
+                    alert("Chúc mừng!")
+                    break                                     
+                }               
+            }
+            else{
+                alert("Thua!")
+            }
+        }    
+    }
+</script>
+</html>
