@@ -9,17 +9,22 @@
 <body>
     <p>Nhập số</p>
     <input type="number" id="inputNumber">
-    <button type="button" onclick="showMassage()">Kiểm tra</button>
+    <button type="button" onclick="showMessage()">Kiểm tra</button>
 </body>
 <script>
-    function showMassage (){
+    function showMessage (){
         let x = document.getElementById("inputNumber").value
-        let y = parseInt(x) 
-        if (y%2 == 0){
-           alert (x + " là số chẵn")
-        }
-        else {
-        alert ( x + " là số lẻ")
+        let y = parseInt(x)
+        let z = parseFloat (x)
+        if (z/y != 1){
+            alert (x + " không phải là số nguyên không thể xét tính chẵn lẻ")}
+            else{
+            if (y%2 == 0){
+            alert (x + " là số chẵn")
+            }
+            else {
+            alert ( x + " là số lẻ")
+            }
         }
     }
 </script>

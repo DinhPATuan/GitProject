@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let input = "Dinh Pham Anh Tuan"
+    let up = "ZXCVBNMASDFGHJKLQWERTYUIOP"
+    let low = "zxcvbnmasdfghjklqwertyuiop"
+    let array1 = []
+    for(let i=0; i<input.length; i++){
+        if(up.indexOf(input[i]) !== -1){
+            array1.push(input[i].toLowerCase())
+        }
+        else {
+            if(low.indexOf(input[i]) !== -1){
+                array1.push(input[i].toUpperCase())
+            }
+            else{array1.push(input[i])} 
+        }
+    }
+    console.log(array1.join(""))
+     console.log("-----------------------------------------")
+    let num = "12463863684524"
+    let array = [num[0]]
+    for(let i=1; i < num.length; i++){
+        if((num[i-1]%2 === 0)&&(num[i]%2 === 0)){
+            array.push("-",num[i])
+        }
+        else {array.push(num[i])}
+    }
+    console.log(array.join(""))
+    console.log("-----------------------------------------")
+    let myCor = ["Red","Green","White","Black"]
+    console.log(myCor.join())
+</script>
+</html>
