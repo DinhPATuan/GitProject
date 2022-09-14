@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="a()">Feet to Meter</button>
+    <button onclick="b()">Meter to Feet</button>
+    <p id="result"></p>
+</body>
+<script>
+    let input = parseFloat(document.getElementById("input").value)
+    function a(){
+        let meter = 0.305 * input
+        document.getElementById("result").innerHTML = meter
+    }
+    function b(){
+        let foot = 3.279 * input
+        document.getElementById("result").innerHTML = foot
+    }
+</script>
+</html>
