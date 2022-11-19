@@ -1,0 +1,21 @@
+h1 {
+    color: #845EC2;
+    text-align: center;
+}
+h2 {color: #D65DB1;}
+
+h3 {color: #FF6F91;}
+
+img {margin-left: 650px;}
+
+body{
+    letter-spacing: 5px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafc92;
+    }
+
+img{
+    width: 600px;
+    border: 5px dashed black;
+}

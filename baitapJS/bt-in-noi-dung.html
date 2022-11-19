@@ -4,26 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>bài tập in nội dung
-    </title>
-    <style>
-        body {width: 20cm;} 
-    </style>
+    <title>Document</title>
 </head>
 <body>
-    <div id="result"></div>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+  <ul id="myUL">
+    <li><a href="#">Adele</a></li>
+    <li><a href="#">Agnes</a></li>
+  
+    <li><a href="#">Billy</a></li>
+    <li><a href="#">Bob</a></li>
+  
+    <li><a href="#">Calvin</a></li>
+    <li><a href="#">Christina</a></li>
+    <li><a href="#">Cindy</a></li>
+  </ul>
 </body>
-<script>
-    let name = prompt("Nhập tên:");
-    let address = prompt("Nhập địa chỉ:");
-    let day = prompt("Nhập ngày:");
-    let month = prompt("Nhập tháng:");
-    let year = prompt("Nhập năm:");
-    document.getElementById("result").innerHTML= 
-    name + " thương nhớ" + "<br>" +
-    "Em không biết phảêu hỡi, em sẽ trở thành người ph nữ như anh mong muốn." + "<br>" + 
-    "Có phải enh ( Em nhớnào." + "<br>" + 
-    "Anh yêu thương, đừng bao giờ rời xa em nữa nhé. Yêu anh rất nhiều." + "<br>" +
-    address + ",ngày " + day +" tháng " + month + " năm " + year
-</script>  
-</html> 
+<script src="demo.js"></script>
+</html>

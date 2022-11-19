@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/7a67f61aa8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><i class="fa-solid fa-phone"></i><b> Hotline:</b> 0964xxxx - 0393xxxx</li>
+                <li><a href="https://mail.google.com/" target="_blank"><i class="fa-regular fa-envelope"></i><b> Email:</b>FGW@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="container">
+            <ul>
+                <li><input type="text" placeholder="Nhập từ khóa... " ><button><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button></li>
+                <li><a href="#home"><img style="width: 130px" src="logo.png" alt=""></a></li>                
+                <li><button class="btnshowcart"><i class="fa-sharp fa-solid fa-cart-shopping"></i> GIỎ HÀNG </button></li>
+            </ul>
+        </div>
+        <div class="menubar">           
+            <ul>
+                <li><a href="Home.html">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="">Sản phẩm <i class="fa-solid fa-sort-down"></i></a>
+                    <div class="submenu1">
+                         <ul>
+                            <li><a href=""><p> Hãng <i class="fa-solid fa-caret-right"></i></p></a>
+                                <div class="submenu2">
+                                    <ul>
+                                       <li><a href=""> Bandai Namco</a></li>
+                                       <li><a href=""> Good Smile Company </a></li>
+                                       <li><a href=""> MegaHouse</a></li>
+                                   </ul>
+                               </div>
+                            </li>
+                            <li><a href=""><p> Loại <i class="fa-solid fa-caret-right"></i></p></a>
+                                <div class="submenu2">
+                                    <ul>
+                                       <li><a href=""> Scale </a></li>
+                                       <li><a href=""> Bootleg </a></li>
+                                       <li><a href=""> Figma </a></li>
+                                   </ul>
+                               </div>
+                            </li>
+                            <li><a href=""><p> Phim <i class="fa-solid fa-caret-right"></i></p></a>
+                                <div class="submenu2">
+                                    <ul>
+                                       <li><a href="onepiece.html"> onePiece </a></li>
+                                       <li><a href="naruto.html"> Naruto </a></li>
+                                       <li><a href="trans.html"> Transformer </a></li>
+                                       <li><a href="dragonball.html"> Dragonball </a></li>
+                                   </ul>
+                               </div>
+                            </li>
+                            <li><a href=""><p> Khác </p></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="">Hướng dẫn mua HÀNG</a></li>
+                <li><a href="">Liên hệ <i class="fa-solid fa-sort-down"></i></a>
+                    <div class="submenu1">
+                        <ul>
+                           <li><a href=""><p> phone <i class="fa-solid fa-caret-right"></i></p></a>
+                               <div class="submenu2">
+                                   <ul>
+                                      <li><a href=""> 0964xxxx </a></li>
+                                  </ul>
+                              </div>
+                           </li>
+                           <li><a href=""><p> Email <i class="fa-solid fa-caret-right"></i></p></a>
+                               <div class="submenu2">
+                                   <ul>
+                                      <li><a href=""> FGW@gmail.com </a></li>
+                                  </ul>
+                              </div>
+                           </li>
+                       </ul>
+                   </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="slider">
+        <div class="container" style="background-color: white;">
+            <div class="slider-content">
+                <div class="slider-top">
+                    <a href="onepiece.html"><img src="slide_1.jpg" alt=""></a>
+                    <a href="naruto.html"><img src="slide_2.jpg" alt=""></a>
+                    <a href="dragonball.html"><img src="slide_3.jpg" alt=""></a>
+                    <a href="trans.html"><img src="slide_4.jpg" alt=""></a>
+                </div>
+                <div class="slider-btn">
+                    <i class="fas fa-chevron-left"></i>
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <div class="slider-bottom">                   
+                    <li class="active" > One Piece </li>
+                    <li  > Naruto </li>
+                    <li  > Dragonball </li>
+                    <li  > Transformer </li>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="product">
+        <div class="procontainer">
+            <ul class="tab">
+                <li class="tab-item" onclick="changeProductList('new', this)">Mới nhất</li>
+                <li class="tab-item" onclick="changeProductList('best-sell', this)">Bán chạy</li>
+            </ul>
+            <div id="new" class="img-product">
+                <ul class="product-list">
+                    <a href=""><img src="pd-1.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li class="productName">Dragonball 1</li>
+                        <li> Price: <span class="amount"> 50000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </ul>
+                <ul class="product-list">
+                    <a href=""><img src="pd-5.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li class="productName">Dragonball 5</li>
+                        <li> Price: <span class="amount"> 55000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </ul>
+                <ul class="product-list">
+                    <a href=""><img src="pd-3.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li class="productName">Dragonball 3</li>
+                        <li> Price: <span class="amount"> 20000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </ul>
+                <div class="product-list">
+                    <a href=""><img src="pd-6.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li>Dragonball 6</li>
+                        <li> Price: <span class="amount"> 45000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <a href=""><img src="po-1.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li>One Piece 1</li>
+                        <li> Price: <span class="amount"> 36000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <a href=""><img src="pt-1.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li>Transformer 1</li>
+                        <li> Price: <span class="amount"> 62000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </div>
+            </div>
+            <div id="best-sell"  class="img-product">
+                <ul class="product-list">
+                    <a href=""><img src="pt-5.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li class="productName">Transformer 5</li>
+                        <li> Price: <span class="amount"> 55000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </ul>
+                <ul class="product-list">
+                    <a href=""><img src="pt-3.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li class="productName">Transformer 3</li>
+                        <li> Price: <span class="amount"> 20000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </ul>
+                <ul class="product-list">
+                    <a href=""><img src="pt-6.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li class="productName">Transformer 6</li>
+                        <li> Price: <span class="amount"> 63000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </ul>
+                <div class="product-list">
+                    <a href=""><img src="pn-1.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li>Naruto 1</li>
+                        <li> Price: <span class="amount"> 16000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <a href=""><img src="po-3.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li>One Piece 3</li>
+                        <li> Price: <span class="amount"> 47000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </div>
+                <div class="product-list">
+                    <a href=""><img src="pd-4.jpg" alt=""></a>
+                    <div class="product-info">
+                        <li>Dragonball 4</li>
+                        <li> Price: <span class="amount"> 52000 </span></li>
+                        <li><button type="button" onclick="addToCart(this)">+ Add</button></li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cart">
+        <i class="fa-solid fa-xmark"></i>
+        <h2>Cart</h2>
+            <table id="cartItems" class="cart-items" style="display:none">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Giá</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                </thead>
+            </table>
+            <div id="cart-body">
+                 
+            </div>
+            <div class="grandTotal" id="grandTotal" >
+                <p>Tổng tiền: <span id="total">0</span></p>
+            </div>
+            <a href=""><button class="buy" >Buy</button></a>
+    </section>
+</body>
+<script src="home.js"></script>
+</html>
