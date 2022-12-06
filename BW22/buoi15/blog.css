@@ -1,0 +1,77 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+.Wel{
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 20px;
+}
+span{
+    color: white;
+    background-color: black;
+}
+.part{
+    width: 70%;
+    height: 90%;
+    margin: auto;  
+}
+.part p {
+    text-align: left;
+    margin: 3%;
+    margin-bottom: 5%;
+    font-size: 18px;
+}
+h2{
+    text-align: left;
+    margin: 3%;
+    font-size: 30px;
+}
+.part div{
+    float: left;
+}
+.part-left{
+    width: 57%;
+    margin: 2%; 
+}
+.phara{
+    margin-bottom: 5%;
+}
+.phara img{
+    width: 100%;
+}
+.part-right{
+    width: 35%;
+    margin: 2%; 
+}
+.intro img{
+    width: 100%;
+}
+.phara, .intro{
+    border: 1px rgb(255, 255, 255) solid;
+    box-shadow: -3px -3px 10px rgb(95, 95, 95);
+}
+.phara:hover, .intro:hover{
+    border: 1px rgb(255, 255, 255) solid;
+    box-shadow: 3px 3px 10px rgb(95, 95, 95);
+}
+@media screen and (max-width: 850px){
+    .part div{
+        width: 100%;
+        float: none;
+    }
+}
+@media screen and (max-width: 1200px){
+    .part{
+        width: 90%;
+    }
+}

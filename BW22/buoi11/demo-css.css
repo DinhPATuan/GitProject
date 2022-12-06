@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+p{
+    background-color: darkblue;
+    color: white;
+    font-weight: bold;
+    width: 40%;
+    float: left;
+}
+
+img{
+    height: 300px;
+    display: block;
+    margin: auto;
+}

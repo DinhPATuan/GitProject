@@ -1,0 +1,10 @@
+img {
+    width: 600px;
+    margin: 50px;
+    border: 15px inset yellow;
+    }
+p {
+    background-color: yellow;
+    border: 10px dashed orange;
+    width: 30%;
+}
