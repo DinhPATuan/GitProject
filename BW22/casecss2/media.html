@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farcry Primal Media</title>
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <script src="https://kit.fontawesome.com/7a67f61aa8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <section class="navbar" id="navbar">
+        <div class="container">
+            <div>
+                <img src="./image/logo/Ubisoft-Horizontal-Logo-WHITE_1.png" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><b>PLAY</b></li>
+                    <li><b>SHOP</b></li>
+                    <li><b>EXPLORE</b></li>
+                    <li><b>HELP</b></li>
+                </ul>
+                <img src="./image/images.png" alt="">
+                <a href="register.html" target="_blank"><img src="./image/Default_pfp.svg.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="header" id="header">
+        <div class="container">
+            <a href="home.html"><img src="./image/logo/fc5-logo-banner_221097.png" alt=""></a>
+            <a href="buy.html"><button><b>BUY NOW</b></button></a>
+        </div>
+    </section>
+
+    <section class="banner">
+        <div class="container">
+            <img src="./image/logo/fc5-logo-banner_221097.png" alt="">
+            <a target="_blank" href="https://www.youtube.com/watch?v=nU0tlaY9ZGI"><button><b>WATCH TRAILER</b></button></a>
+        </div>
+    </section>
+
+    <section class="introduce">
+        <div class="container">
+            <h1>From prey to predator</h1>
+            <div class="paragraph">
+                <p>Welcome to the Stone Age, a time of extreme danger and limitless adventure, when giant mammoths and
+                    sabretooth tigers ruled the Earth, and humanity is at the bottom of the food chain. As the last
+                    survivor of your hunting group, you will learn to craft a deadly arsenal, fend off fierce predators,
+                    and outsmart enemy tribes to conquer the land of Oros and become the Apex Predator.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="allmedia">
+        <div class="container">
+            <hr>
+            <h1>Media</h1>
+            <div class="titlemedia">
+                <p id="pic" onclick="pic()"><b>Screenshot</b></p>
+                <p id="video" onclick="vid()"><b>Video</b></p>
+            </div>
+            <table id="showpic">
+                <tr>
+                    <td><img id="myImg" src="./image/media/1.jpg" alt=""></td>
+                    <td><img src="./image/media/2.jpg" alt=""></td>
+                    <td><img src="./image/media/3.jpg" alt=""></td>
+                    <td><img src="./image/media/4.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="./image/media/5.jpg" alt=""></td>
+                    <td><img src="./image/media/6.jpg" alt=""></td>
+                    <td><img src="./image/media/7.jpg" alt=""></td>
+                    <td><img src="./image/media/8.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="./image/media/9.jpg" alt=""></td>
+                    <td><img src="./image/media/10.jpg" alt=""></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            <table id="showvideo">
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=ItYqXewK2Wc">
+                            <img src="./image/media/video/1.jpg" alt="">
+                            <img class="videoicon" src="./image/media/video/702264.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=W54z1hwa8yM">
+                            <img src="./image/media/video/2.jpg" alt="">
+                            <img class="videoicon" src="./image/media/video/702264.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=nU0tlaY9ZGI">
+                            <img src="./image/media/video/3.jpg" alt="">
+                            <img class="videoicon" src="./image/media/video/702264.png" alt="">
+                        </a>
+                    </td>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=5sOXXO60cRU&t=3s">
+                            <img src="./image/media/video/4.jpg" alt="">
+                            <img class="videoicon" src="./image/media/video/702264.png" alt="">
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a target="_blank" href="https://www.youtube.com/watch?v=UAP84REsPTU&t=3s">
+                            <img src="./image/media/video/5.jpg" alt="">
+                            <img class="videoicon" src="./image/media/video/702264.png" alt="">
+                        </a>
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="img01">
+        </div>
+    </section>
+
+    <section class="info">
+        <div class="container">
+            <h1>Far Cry Primal</h1>
+            <p>The award-winning Far Cry franchise that stormed the tropics and the Himalayas now enters the original
+                fight for humanity’s survival with its innovative open-world sandbox gameplay, bringing together massive
+                beasts, breathtaking environments, and unpredictable savage encounters.</p>
+            <div class="infomation">
+                <div class="date">
+                    <p>Release Date: 23 2 2016</p>
+                    <p>Developer: Ubisoft Montréal, Ubisoft Shanghai, Ubisoft Kiev, Ubisoft Toronto</p>
+                </div>
+                <div class="type">
+                    <p>Genre: shoot / action</p>
+                    <p>Platforms: PC / Xbox One / PlayStation 4</p>
+                </div>
+            </div>
+            <div class="last">
+                <div class="fanpage">
+                    <p>Follow Far Cry Primal on:</p>
+                    <img src="./image/logo/facebook_white_background.png" alt="">
+                    <img src="./image/logo/twitter-01.webp" alt="">
+                    <img src="./image/logo/youtube-white_background.webp" alt="">
+                    <img src="./image/logo/instagram_white_background.png" alt="">
+                </div>
+                <div class="warn">
+                    <p>Far Cry Primal is rated</p>
+                    <img src="./image/logo/pegi18-white.webp" alt="">
+                </div>
+            </div>
+            <p class="license">©2020 Ubisoft Entertainment. All Rights Reserved. Far Cry, Ubisoft, and the Ubisoft logo
+                are trademarks of Ubisoft Entertainment in the US and/or other countries. The “PS” Family logo is a
+                registered trademark and “PS4” is a trademark of Sony Computer Entertainment Inc. Software platform logo
+                (TM and ©) EMA 2006.</p>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="contact">
+                <p>Visit Other Ubisoft Channels</p>
+                <div class="contact1">
+                    <img src="./image/footer/tt.webp" alt="">
+                    <img src="./image/footer/fb.webp" alt="">
+                    <img src="./image/footer/tw.webp" alt="">
+                    <img src="./image/footer/yt.webp" alt="">
+                    <img src="./image/footer/ig.webp" alt="">
+                    <img src="./image/footer/li.webp" alt="">
+                </div>
+            </div>
+            <div class="lastinfo">
+                <div class="item1">
+                    <img class="logo" src="./image/logo/Ubisoft-Horizontal-Logo-WHITE_1.png" alt="">
+                </div>
+                <div class="item2">
+                    <p>PRIVACY</p>
+                    <p>TERMS OF USE</p>
+                    <p>LEGAL INFO</p>
+                    <p>SET COOKIES</p>
+                    <p class="p1">UK Tax strategy</p>
+                    <p class="p1">Modern Slavery Statement</p>
+                </div>
+                <div class="item3">
+                    <p>UBISOFT CONNECT</p>
+                    <p>HELP</p>
+                </div>
+                <div class="item4">
+                    <p>INVESTORS</p>
+                    <p>PRESS</p>
+                </div>
+                <div class="item5">
+                    <p>COMPANY</p>
+                    <p>CAREERS</p>
+                    <p>LOCATINONS</p>
+                </div>
+                <div class="item6">
+                    <p>© 2022 Ubisoft Entertainment. All Rights Reserved. Ubisoft, Ubi.com and the Ubisoft logo are
+                        trademarks of Ubisoft Entertainment in the U.S. and/or other countries.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>

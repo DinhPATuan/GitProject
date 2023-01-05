@@ -1,0 +1,44 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 70%;
+    height: 70%;
+    margin: auto;
+    margin-top: 100px;
+    background-color: indianred;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item1{
+    background-color: blue;
+}
+
+.item2{
+    background-color: aquamarine;
+    align-self: stretch;
+}
+
+.item3{
+    align-self: flex-end;
+    background-color: burlywood;
+}
+
+.item4{
+    background-color: darkgoldenrod;
+}
+
+.item5{
+    background-color: chartreuse;
+    align-self: flex-start;
+}

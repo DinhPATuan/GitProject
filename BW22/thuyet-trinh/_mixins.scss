@@ -8,14 +8,8 @@ $radius: 15px;
 @mixin hover {
     box-shadow: 5px 5px 10px black;
 }
-@mixin img {
-    width: 225px;
-    height: 225px;
-    margin: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
-}
-@mixin img56 {
-    border-radius: 50%;
-    padding: 20px;
+@mixin img ($bradius, $bsize, $bstyle, $bcolor, $bgcolor){
+    border-radius: $bradius;
+    border: $bsize $bstyle $bcolor;
+    background-color: $bgcolor;
 }

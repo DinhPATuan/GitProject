@@ -26,41 +26,49 @@ div{
 }
 
 img{
-    @include img();
+    width: 225px;
+    height: 225px;
+    margin: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
 }
 
 div img:nth-child(1){
-    border-radius: $radius;
-    border: $border3px $style $color-boder;
-    background-color: $color-bg;
+    @include img(15px, 3px, solid, black, white )
+    // border-radius: $radius;
+    // border: $border3px $style $color-boder;
+    // background-color: $color-bg;
 }
 div img:nth-child(2){
-    border-radius: $radius;
-    border: $border3px dotted $color-boder;
-    background-color: $color-bg;
+    @include img($radius, $border3px, dotted, $color-boder, $color-bg);
+    // border-radius: $radius;
+    // border: $border3px dotted $color-boder;
+    // background-color: $color-bg;
 }
 div img:nth-child(3){
-    border-radius: $radius;
-    border: $border3px $style mediumseagreen;
-    background-color: $color-bg;
+    @include img($radius, $border3px, $style, mediumseagreen, $color-bg);
+    // border-radius: $radius;
+    // border: $border3px $style mediumseagreen;
+    // background-color: $color-bg;
 }
 div img:nth-child(4){
-    border-radius: 40px;
-    border: $border6px $style #b8181b;
-    background-color: #e7d5c2;
+    @include img(40px, $border6px, $style, #b8181b, #e7d5c2);
+    // border-radius: 40px;
+    // border: $border6px $style #b8181b;
+    // background-color: #e7d5c2;
     padding: 20px;
 }
 div img:nth-child(5){
-    border: $border6px dashed rgb(109,85,106);
-    background-color: peru;
+    @include img(50%, $border6px, dashed, rgb(109,85,106), peru);
+    // border: $border6px dashed rgb(109,85,106);
+    // background-color: peru;
+    padding: 20px;
 }
 div img:nth-child(6){
-    border: $border3px $style $color-boder;
-    background-color: #aac5d9;
-}
-
-div img:nth-child(6), div img:nth-child(5){
-    @include img56()
+    @include img(50%, $border3px, $style, $color-boder, #aac5d9);
+    // border: $border3px $style $color-boder;
+    // background-color: #aac5d9;
+    padding: 20px;
 }
 
 img:hover{

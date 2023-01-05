@@ -1,0 +1,155 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+.form{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+    width: 450px;
+    height: 710px;
+    margin: auto;
+    margin-top: 17px;
+}
+.logo{
+    width: 100%;
+    height: 121px;
+    background-color: rgb(41, 47, 56);
+    
+}
+.logo img{
+    width: 190px;
+    margin: auto;
+    display: block;
+    padding-top: 30px;
+}
+.title1{
+    color: rgb(41, 47, 56);
+    display: flex;
+    justify-content: space-between;
+    font-size: 25px;
+    padding-top: 18px;
+}
+.title1 .create:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.email{
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+.email input{
+    padding-left: 30px;
+    width: 92.78%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+.email i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 33px 0px 0px 9px;
+    color: rgb(100, 100, 100);
+    font-size: 12px;
+}
+
+.pass{
+    position: relative;
+    width: 100%;
+    padding-top: 75px;
+}
+.pass input{
+    padding-left: 30px;
+    width: 92.78%;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(100, 100, 100);
+}
+.pass i{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 87px 0px 0px 10px;
+    color: rgb(100, 100, 100);
+    font-size: 12px;
+}
+.title2{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 18px;
+}
+.title2 input{
+    width: 20px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.title2 .re{
+    padding-right: 135px;
+}
+.title2 b:hover{
+    color: rgb(100, 100, 100);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    height: 50px;
+    margin-top: 16px;
+    border: none;
+    background-color: rgb(0, 130, 255);
+    color: white;
+    font-size: 18px;  
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(0, 110, 255);
+}
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 3px;
+  }
+  
+  /* To show the lines on right 
+  and left sides of the text */
+  .divider::after,
+  .divider::before {
+    content: "";
+    border: 0.2px solid rgb(100, 100, 100);
+    flex: 1;
+  }
+  
+  /* Space on left and right sides of text */
+  .divider:not(:empty)::before {
+    margin-right: 20px;
+  }
+  
+  .divider:not(:empty)::after {
+    margin-left: 20px;
+  }
+
+.icon{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon img{
+    width: 32px;
+    cursor: pointer;
+}
+.policy{
+    text-align: center;
+    margin-top: 60px;
+    color: rgb(0, 130, 255);
+    font-size: 17px;
+    font-weight: bold;
+}
+.policy:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

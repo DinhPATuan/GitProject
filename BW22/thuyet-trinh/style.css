@@ -35,8 +35,8 @@ img {
 
 div img:nth-child(1) {
   border-radius: 15px;
-  border: 3px solid #000;
-  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  background-color: white;
 }
 
 div img:nth-child(2) {
@@ -59,17 +59,16 @@ div img:nth-child(4) {
 }
 
 div img:nth-child(5) {
+  border-radius: 50%;
   border: 6px dashed rgb(109, 85, 106);
   background-color: peru;
+  padding: 20px;
 }
 
 div img:nth-child(6) {
+  border-radius: 50%;
   border: 3px solid #000;
   background-color: #aac5d9;
-}
-
-div img:nth-child(6), div img:nth-child(5) {
-  border-radius: 50%;
   padding: 20px;
 }
 

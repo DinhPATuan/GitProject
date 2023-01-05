@@ -1,0 +1,439 @@
+html, body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    z-index: 2;
+    transition: 0.5s;
+}
+.navbar .container{
+    height: 100%;
+}
+.navbar img{
+    padding: 9px 60px 9px 60px;
+    float: left;
+    width: 95px;
+    cursor: pointer;
+}
+.menu{
+    display: flex;
+    height: 100%;
+}
+.navbar ul{
+    height: 100%;
+    width: 89%;
+    padding: 0;
+    margin: 0px;
+    display: flex;
+    color: white;
+    list-style: none;
+    justify-content: center;
+    margin-right: 0;
+}
+.navbar li{
+    height: 100%;
+    cursor: pointer;
+    padding-left: 31px;
+    padding-right: 31px;
+    line-height: 50px;
+}
+.navbar li:hover{
+    background-color: white;
+    color: black;
+}
+.menu img{
+    float: right;
+    width: 30px;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+ /* header */
+.header{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 2;
+    background-color: rgb(41, 47, 56);
+    transition: 0.5s;
+}
+.header img{
+    width: 110px;
+    padding-left: 53px;
+}
+.header .container{
+    height: 100%;
+}
+.header button{
+    cursor: pointer;
+    float: right;
+    height: 100%;
+    width: 237px;
+    border: 0;
+    background-color: #E86929;
+    font-size: 21px;
+    color: white;
+    transition: 0.5s;
+}
+.header a{
+    text-decoration: none;
+    
+}
+.header button:hover{
+    background-color: white;
+    color: #E86929;
+}
+
+/* banner */
+.banner{
+    margin-top: 100px;
+    width: 100%;
+    height: 760px;
+    background-image: url(./image/headbg/fc5-ubicom-hero-art-v2_desktop_221102.jpg);
+    background-size: cover;
+    height: 760px
+}
+.banner .container{
+    height: 100%;
+    width: 100%;
+}
+.banner img{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner button{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    color: white;
+    background-color: #E86929;
+    border: 0;
+    border-radius: 50px;
+    margin-top: 408px;
+    width: 206.63px;
+    height: 54px; 
+    font-size: 19px;
+    transition: 0.5s;
+}
+.banner a{
+   text-decoration: none;
+}
+.banner button:hover{
+    background-color: white;
+    color: #E86929;
+    border: 1px solid #E86929;
+}
+
+/* introduce */
+.introduce{
+    height: 420px;
+    width: 100%;
+}
+.introduce .container{
+    height: 100%;
+    width: 1220px;
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: -139px;
+}
+.introduce h1{
+    font-size: 70px;
+    padding-top: 20px;
+    margin-bottom: 48px;
+}
+.paragraph p{
+    margin: auto;
+    text-align: center;
+    font-size: 22px;
+    width: 91%;
+    line-height: 35px;
+}
+
+/* overview */
+.overview{
+    height: 2280px;
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+}
+.overview h1 {
+    font-size: 39px;
+    text-align: center;
+    padding-top: 147px;
+}
+.overview .part1 {
+    padding: 40px 240px 40px 240px;
+    margin-bottom: 90px;
+}
+.overview .part2 {
+    padding: 40px 240px 40px 240px;
+    margin-bottom: 90px;
+}
+.overview .part3 {
+    padding: 40px 240px 40px 240px;
+    margin-bottom: 90px;
+}
+.overview img{
+    width: 850px;
+}
+.overview .part1 .disc{
+    position: absolute;
+    background-color: white;
+    width: 704px;
+    height: 400px;
+    padding-left: 40px;
+    margin-top: -330px;
+    margin-left: 700px;
+    z-index: 1;
+}
+.overview .part2 .disc{
+    position: absolute;
+    background-color: white;
+    width: 704px;
+    height: 400px;
+    padding-left: 40px;
+    margin-top: -330px;
+    z-index: 1;
+}
+.overview .part2 img{
+    padding-left: 600px;
+}
+.overview .part3 .disc{
+    position: absolute;
+    background-color: white;
+    width: 704px;
+    height: 400px;
+    padding-left: 40px;
+    margin-top: -330px;
+    margin-left: 700px;
+    z-index: 1;
+}
+.overview p{
+    padding-top: 10px;
+    font-size: 37px;
+    font-weight: bold;
+    margin-bottom: 5px;   
+}
+.disc ul{
+    font-size: 17px;
+    width: 73%;
+    line-height: 26px;
+}
+
+/* media */
+.media{
+    height: 55%;
+    width: 100%;
+}
+.media .container{
+    width: 80%;
+    margin: auto;
+}
+.media img{
+    height: 280px ;
+    
+}
+.media h1{
+    font-size: 39px;
+    text-align: center;
+    padding-top: 39px;
+    padding-bottom: 39px;
+}
+.media a{
+    text-decoration: none;
+    color: #000;
+}
+.media a:hover{
+    color: #E86929;
+    text-decoration: underline;
+}
+
+/* owlcarousel */
+.owl-prev{
+    position: absolute;
+    transform: translateY(-50%);
+    left: -30px;
+    top: 45%;
+    font-size: 50px!important;
+    color: #E86929!important;
+}
+.owl-next{
+    position: absolute;
+    transform: translateY(-50%);
+    right: -30px;
+    top: 45%;
+    font-size: 50px!important;
+    color: #E86929!important;
+}
+.owl-next, .owl-prev:hover{
+    background: none!important;
+}
+
+/* popup img */
+
+/* info */
+.info{
+    background-color: rgb(230, 230, 230);
+    width: 100%;
+    height: 75%;
+}
+.info img{
+    cursor: pointer;
+}
+.info .container{
+    width: 1495px;
+    margin-left: 194px;
+}
+.info h1{
+    font-size: 41px;
+    padding-top: 70px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+.info p{
+    margin-top: 12px;
+    font-size: 19px;
+    line-height: 30px;
+    width: 69%;
+}
+.info .infomation{
+    margin-top: 30px;
+    display: flex
+}
+.infomation .date{
+    width: 35%;
+}
+.infomation .date p{
+    width: 100%;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+.infomation .type{
+    width: 45%;
+}
+.infomation .type p{
+    width: 100%;
+    padding-bottom: 2px;
+    font-size: 20px;
+}
+.last{
+    margin-top: 6px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+.last .fanpage img{
+    width: 88px;
+    margin-right: 15px;
+    border: 2px solid #707070;
+    border-radius: 6px;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.last .fanpage img:hover{
+    transform: translateY(-3%);
+    opacity: 0.5;
+}
+.last .warn{
+    width: 235px;
+}
+.last .warn p{
+    width: 100%;
+}
+.info .license{
+    width: 82%;
+    text-align: center;
+    margin: auto;
+    margin-top: 35px;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+/* footer */
+.footer .contact{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+.contact .contact1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact p{
+    height: 0px;
+    padding-left: 230px;
+    color: #b1b1b1;
+    font-size: 14px;
+    transform: translateY(20px);
+    margin: 0;
+}
+.footer .contact img{
+    width: 34px;
+    height: 34px;
+    padding-right: 18px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.footer .contact img:hover{
+    opacity: 0.7;
+}
+.footer .logo{
+    width: 122px;
+}
+.footer .lastinfo{
+    background-color: rgb(029, 30, 34);
+    font-weight: bold;
+    color: white;
+    padding-left: 230px;
+    padding-bottom: 50px;
+    display: grid; 
+    grid-template-columns: 375px 241px 240px 295px 310px;
+}
+.footer .lastinfo p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.item1{
+    
+    padding-top: 52px;
+    padding-bottom: 53px;
+    grid-column: 1/6;
+}
+.item2{
+    line-height: 26px;
+    font-size: 13px;
+}
+.item2 .p1{
+    font-size: 15px;
+    font-weight: lighter;
+    color: #9b9b9b;
+}
+.item6{
+    font-size: 13px;
+    font-weight: normal;
+    text-align: right;
+}
+.item6 p:hover{
+    text-decoration: none!important;
+    cursor: default!important;
+}
+
+
+  
