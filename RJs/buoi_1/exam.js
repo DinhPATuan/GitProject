@@ -9,6 +9,7 @@ class Book{
 
 class ficBook extends Book{
     constructor(category){
+        super(bookCode,name,price,author)
         this.category = category;
     }
 }
