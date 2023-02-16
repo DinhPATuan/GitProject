@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <Script>
+        // default callback-------------
+        function greet (name, callback) {
+            console.log('Hi' + '' + name);
+            callback();
+        }
+
+        function callMe (){
+            console.log('Im call back function');
+        }
+
+        greet ('Peter', callMe);
+
+        // callback with setTimeout()
+        function greet1(){
+            console.log('Hello world');
+        }
+
+        function sayName(name){
+            console.log('Hello'+''+ name);
+        }
+
+        setTimeout(greet1, 2000);
+        sayName ('Jonh');
+
+        // callback when wait function
+        function greet2(name, myFunction){
+            console.log('Hello world');
+            myFunction(name);
+        }
+        function sayName1(name){
+            console.log('Hello'+ '' + name);
+        }
+        setTimeout(greet2, 2000,'John', sayName1)
+    </Script>
+</body>
+</html>

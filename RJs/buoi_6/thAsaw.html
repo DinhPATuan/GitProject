@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // async---------------
+        async function f(){
+            console.log('Async function.');
+            return Promise.resolve(1);
+        }
+        f();
+
+        // Chaining method()-----------
+        async function f1(){
+            console.log('Async function.');
+            return Promise.resolve(1);
+        }
+        f().then(function(result){
+            console.log(result)
+        });
+
+        // await------------------
+        let promise = new Promise(function(resolve, reject){
+            setTimeout(function(){
+                resolve('Promise resolved')
+            },4000);
+        });
+        async function asyncFunction(){
+            let res = await promise;
+            console.log(res);
+            console.log('hello');
+        }
+        asyncFunction();
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // use Promise---------------------
+        const count = true;
+        let countValue = new Promise(function(resolve, reject){
+            if(count){
+                resolve("There is a count value.");
+            }else{
+                reject("There is not count value.");
+            }
+        });
+        console.log(countValue);
+
+        // chaining promise------------------
+        let countValue1 = new Promise(function(resolve, reject){
+            resolve("Promise resolved");
+        });
+        countValue1
+            .then(function successValue(result){
+                console.log(result);
+            })
+            .then(function successValue1(){
+                console.log("You can call multiple function this way.");
+            });
+        
+        // catch() trong JS----------------
+        let countValue2 = new Promise(function(resolve, reject){
+            reject('Promise rejected');
+        });
+        countValue2
+            .then(function successValue(result){
+                console.log(result);
+            })
+            .catch(function errorValue (result){
+                console.log(result);
+            });
+    </script>
+</body>
+</html>
