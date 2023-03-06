@@ -37,13 +37,20 @@ const students = [
 ]
 root.render(
   <div>
-    {students.map(student =>(
+    <table>
       <tr>
-        <td>{student.company}</td>
-        <td>{student.company}</td>
-        <td>{student.company}</td>
+          <th>Company</th>
+          <th>Contact</th>
+          <th>Country</th>
       </tr>
+    {students.map(student =>(
+        <tr>
+          <td>{student.company}</td>
+          <td>{student.contact}</td>
+          <td>{student.country}</td>
+        </tr>    
     ))}
+    </table>
   </div>
 )
 
